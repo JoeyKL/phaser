@@ -1,0 +1,67 @@
+/* Submenu - Inspired by John Gruber's project submenus at daringfireball.net. Use in conjunction with menu.js */
+div.border {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	z-index: 1;
+	float: left;
+	left: 50%;
+	margin: 24px;
+	height: 24px;
+	border: 1px solid #0090FF;
+	background: #0090FF;
+	border-radius: 1px;
+}
+
+submenu ul {
+	list-style: none outside;
+	position: relative;
+	z-index: 1;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+submenu li {
+	display: inline;
+	padding: 0px;
+	margin: 0px;
+}
+
+submenu li a {
+	min-width: 100px;
+	height: 24px;
+	line-height: 24px;
+	padding: 0px;
+	margin: 0px;
+	font-weight: 300;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	background: none;
+	float: left;
+	color: #0090FF;
+	background: #FFFFFF;
+	transition: 0.5s;
+}
+
+submenu li a:hover {
+	background: #EEEEF2;
+	color: #0090FF;
+	transition: 0.5s;
+}
+
+submenu li a.selected, submenu li a:active {
+	background: none;
+	color: #FFFFFF;
+	transition: 0.5s;
+}
+
+/* Visibility classes */
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: inline-block;
+}
